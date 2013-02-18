@@ -1,21 +1,19 @@
 
 //-------------------------------------
-/* TALK TEMPLATE
- *
- * a Processing slideshow template for presentations
- *
- */
+// IMPORTS
 //-------------------------------------
 
-
-
+/* None! I did it all by myself!! */
 
 //-------------------------------------
 // DECLARATIONS
 //-------------------------------------
 
 PFont Header1, Header2, Header3, Body;
-PGraphics pg;
+PFont CG18, CG24, CG36, CG48;
+
+PImage[] bombirImages;
+PImage[] sonicdriftImages;
 
 //-------------------------------------
 // VARIABLES
@@ -24,6 +22,9 @@ PGraphics pg;
 String title, subtitle, body;
 int section = 0;
 int subSection = 1;
+int trimChars = 2;
+
+String speak[];
 
 //-------------------------------------
 // SETUP
@@ -32,20 +33,36 @@ int subSection = 1;
 void setup() {
   
   // Screen
-  size(1280, 720, P2D);
+  size(1280, 720, JAVA2D);
   smooth();
   
   background(0);
   textAlign(CENTER);
   
-  // PGraphics
-  pg = createGraphics(width, height, P2D);
-  
   // Fonts
-  Header1 = createFont("Header1", 96, true);
-  Header2 = createFont("Header2", 48, true);
-  Header3 = createFont("Header3", 36, true);
-  Body = createFont("Body", 12, true);
+  Header1 = createFont("fonts/Header1", 96, true);
+  Header2 = createFont("fonts/Header2", 48, true);
+  Header3 = createFont("fonts/Header3", 36, true);
+  Body    = createFont("fonts/Body", 24, true);
+  
+  CG18 = createFont("fonts/CenturyGothic-18", 18, true);
+  CG24 = createFont("fonts/CenturyGothic-24", 24, true);
+  CG36 = createFont("fonts/CenturyGothic-36", 36, true);
+  CG48 = createFont("fonts/CenturyGothic-48", 48, true);
+  
+  // Speak
+  speak = loadStrings("siat.txt");
+  
+  // Images
+  bombirImages = new PImage[3];
+  bombirImages[0] = loadImage("images/bombir_1.jpg");
+  bombirImages[1] = loadImage("images/bombir_2.jpg");
+  bombirImages[2] = loadImage("images/bombir_3.jpg");
+
+  sonicdriftImages = new PImage[3];
+  sonicdriftImages[0] = loadImage("images/sd_1.jpg");
+  sonicdriftImages[1] = loadImage("images/sd_2.jpg");
+  sonicdriftImages[2] = loadImage("images/sd_3.jpg");
   
 }
 
@@ -56,9 +73,6 @@ void setup() {
 
 void draw() {
   background(0);
-  
-  // Start PG 
-  pg.beginDraw();
   
   if(section == 0) {
     section0(); 
@@ -84,20 +98,8 @@ void draw() {
   else if(section == 7) {
     section7(); 
   }
-  else if(section == 8) {
-    section8(); 
-  }
-  else if(section == 9) {
-    section9(); 
-  }
-  
-  // End PG
-  pg.endDraw();
-  
-  // Show PG
-  //image(pg, 0, 0);
   
 }
 
-
+//-------------------------------------
 
