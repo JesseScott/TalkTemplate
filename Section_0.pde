@@ -6,21 +6,21 @@
 void section0() {
   pushStyle();
     
-    // Title -- Line 01
+    // Style
     fill(255);
-    textFont(Header2);
-    textAlign(CENTER);
-    title = speak[1].substring(trimChars);
-    text(title, width/2, height * 0.2);
+    stroke(255);
+    strokeWeight(10);
+    strokeCap(ROUND);
+    strokeJoin(MITER);
+    smooth();
     
-    // Body -- Lines 02 - 03
-      fill(255);
-      textFont(Header3);
-      textAlign(CENTER);
-      body = speak[2].substring(trimChars);
-      text(body, width/2, height/2);
-      body = speak[3].substring(trimChars);
-      text(body, width/2, height/2 + 50);   
+    // Left Shape
+    line(width * 0.1, height * 0.5, width * 0.2, height * 0.25);
+    line(width * 0.1, height * 0.5, width * 0.2, height * 0.75);
+   
+    // Right Shape
+    line(width * 0.9, height * 0.5, width * 0.8, height * 0.25);
+    line(width * 0.9, height * 0.5, width * 0.8, height * 0.75); 
     
   popStyle();
 }

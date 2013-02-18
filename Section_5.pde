@@ -29,15 +29,15 @@ void section5() {
     }
     // SS2
     else if(subSection == 2) {
-      image(sonicdriftImages[0], 0, 0); 
+      //image(sonicdriftImages[0], 0, 0); 
     }
     // SS3
     else if(subSection == 3) {
-      image(sonicdriftImages[1], 0, 0); 
+      //image(sonicdriftImages[1], 0, 0); 
     }
     // SS4
     else if(subSection == 4) {
-      image(sonicdriftImages[2], 0, 0); 
+      //image(sonicdriftImages[2], 0, 0); 
     }
 
   popStyle();

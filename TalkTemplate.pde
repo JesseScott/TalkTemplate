@@ -59,10 +59,7 @@ void setup() {
   bombirImages[1] = loadImage("images/bombir_2.jpg");
   bombirImages[2] = loadImage("images/bombir_3.jpg");
 
-  sonicdriftImages = new PImage[3];
-  sonicdriftImages[0] = loadImage("images/sd_1.jpg");
-  sonicdriftImages[1] = loadImage("images/sd_2.jpg");
-  sonicdriftImages[2] = loadImage("images/sd_3.jpg");
+
   
 }
 
