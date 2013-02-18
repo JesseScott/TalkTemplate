@@ -22,6 +22,9 @@ void section0() {
     line(width * 0.9, height * 0.5, width * 0.8, height * 0.25);
     line(width * 0.9, height * 0.5, width * 0.8, height * 0.75); 
     
+    
+    
+    
   popStyle();
 }
 
