@@ -49,4 +49,10 @@ void keyPressed() {
     }
   }
   
+  // Reset Timer
+  if(section != 0) {
+    println("Resetting Timer...");
+    timer.reset(); 
+  }
+  
 }
