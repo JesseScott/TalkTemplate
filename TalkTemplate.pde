@@ -27,6 +27,12 @@ import gml4u.model.*;
 // DECLARATIONS
 //-------------------------------------
 
+PGraphics pg;
+int pgw = 1280;
+int pgh = 720;
+int sw = 1280;
+int sh = 1024;
+
 PFont Header1, Header2, Header3, Body;
 PFont CG18, CG24, CG36, CG48;
 
@@ -55,11 +61,14 @@ String speak[];
 void setup() {
   
   // Screen
-  size(1280, 720, JAVA2D);
+  size(sw, sh, JAVA2D);
   smooth();
   
   background(0);
   textAlign(CENTER);
+  
+  // Buffer
+  pg = createGraphics(pgw, pgh);
   
   // Fonts
   Header1 = createFont("fonts/Header1", 96, true);
@@ -96,8 +105,14 @@ void setup() {
 //-------------------------------------
 
 void draw() {
-  background(0);
+  // Background
+  background(55);
   
+  // Start Buffer
+  pg.beginDraw();
+    pg.background(0);
+   
+  // Draw Section
   if(section == 0) {
     section0(); 
   }
@@ -122,6 +137,12 @@ void draw() {
   else if(section == 7) {
     section7(); 
   }
+  
+  // End Buffer
+  pg.endDraw();
+  
+  // Draw Buffer
+  image(pg, 0, 0);
   
 }
 
