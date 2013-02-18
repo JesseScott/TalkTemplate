@@ -33,6 +33,10 @@ PFont CG18, CG24, CG36, CG48;
 PImage[] bombirImages;
 PImage[] sonicdriftImages;
 
+Gml gml;
+Timer timer = new Timer();
+int timeMax = 30;
+
 //-------------------------------------
 // VARIABLES
 //-------------------------------------
@@ -77,6 +81,11 @@ void setup() {
   bombirImages[1] = loadImage("images/bombir_2.jpg");
   bombirImages[2] = loadImage("images/bombir_3.jpg");
 
+  // GML
+  PropertyConfigurator.configure(sketchPath+"/log4j.properties");
+  gml = GmlParsingHelper.getGml(sketchPath+"/data/gml/tag.xml", false);
+  GmlUtils.timeBox(gml, timeMax, true);
+  timer.start();
 
   
 }
