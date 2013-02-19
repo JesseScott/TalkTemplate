@@ -32,10 +32,12 @@ import java.util.Properties;
 
 // Graphics Buffer
 PGraphics pg;
-int pgw = 1280;
-int pgh = 720;
-int sw = 1280;
-int sh = 1024;
+
+// Properties
+int NumScreens;
+int FirstScreenWidth, FirstScreenHeight;
+int BufferWidth, BufferHeight;
+int SecondScreenOffset, SecondScreenWidth, SecondScreenHeight;
 
 // Fonts
 PFont Header1, Header2, Header3, Body;
@@ -69,16 +71,38 @@ String speak[];
 //-------------------------------------
 
 void setup() {
+  // Properties
+   try {
+     // Setup
+     properties=new P5Properties();
+     properties.load(openStream("settings.properties"));
+     // Screens
+     NumScreens = properties.getIntProperty("env.view.numscreens", 1);
+     // First Window
+     FirstScreenWidth = properties.getIntProperty("env.view.firstscreen.width", 640);
+     FirstScreenHeight = properties.getIntProperty("env.view.firstscreen.height", 480);
+     // Graphics Buffer
+     BufferWidth = properties.getIntProperty("env.view.pgraphics.width", 640);
+     BufferHeight = properties.getIntProperty("env.view.pgraphics.height", 480);      
+     // Second Window
+     SecondScreenOffset = properties.getIntProperty("env.view.secondscreen.offset", 1920);
+     SecondScreenWidth = properties.getIntProperty("env.view.secondscreen.width", 640);
+     SecondScreenHeight = properties.getIntProperty("env.view.secondscreen.height", 480);
+  }
+  catch(IOException e) {
+    println("couldn't read config file...");
+    exit();
+  }
   
   // Screen
-  size(sw, sh, JAVA2D);
+  size(FirstScreenWidth, FirstScreenHeight, JAVA2D);
   smooth();
   
   background(0);
   textAlign(CENTER);
   
   // Buffer
-  pg = createGraphics(pgw, pgh);
+  pg = createGraphics(BufferWidth, BufferHeight);
   
   // Fonts
   Header1 = createFont("fonts/Header1", 96, true);
@@ -94,11 +118,8 @@ void setup() {
   // Speak
   speak = loadStrings("siat.txt");
   
-  // Images
-  bombirImages = new PImage[3];
-  bombirImages[0] = loadImage("images/bombir_1.jpg");
-  bombirImages[1] = loadImage("images/bombir_2.jpg");
-  bombirImages[2] = loadImage("images/bombir_3.jpg");
+  // Assets
+
 
   // GML
   PropertyConfigurator.configure(sketchPath+"/log4j.properties");
@@ -116,7 +137,7 @@ void setup() {
 
 void draw() {
   // Background
-  background(55);
+  background(255);
   
   // Start Buffer
   pg.beginDraw();
