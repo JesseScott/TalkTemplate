@@ -8,6 +8,7 @@ void keyPressed() {
   if(key == '0') {
     section = 0;
     subSection = 1;
+    timer.reset(); 
   }  
   else if(key == '1') {
     section = 1;

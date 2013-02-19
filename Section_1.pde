@@ -1,54 +1,56 @@
 
 //-------------------------------------
-// Section 1  :  Intro
+// Section 1  :  THE TAG
 //-------------------------------------
 
 void section1() {
-  pushStyle();
+  pg.pushStyle();
+  pg.pushMatrix();
     
     // Title -- Line 05
-    fill(255);
-    textFont(Header2);
-    textAlign(CENTER);
+    pg.fill(255);
+    pg.textFont(Header2);
+    pg.textAlign(CENTER);
     title = speak[5].substring(trimChars);
-    text(title, width/2, height * 0.2);
+    pg.text(title, pg.width/2, pg.height * 0.2);
     
     // Body 
     if(subSection == 1) { // Lines 06 - 07
-      fill(225);
-      textFont(CG24);
-      textAlign(LEFT);
+      pg.fill(225);
+      pg.textFont(CG24);
+      pg.textAlign(LEFT);
       body = speak[6].substring(trimChars);
-      text(body, width/8, height/2);
+      pg.text(body, pg.width/8, pg.height/2);
       body = speak[7].substring(trimChars);
-      text(body, width/8, height/2 + 50);   
+      pg.text(body, width/8, height/2 + 50);   
     }
     // SS2
     else if(subSection == 2) { // Lines 09 - 11
-      fill(225);
-      textFont(CG24);
-      textAlign(LEFT);
+      pg.fill(225);
+      pg.textFont(CG24);
+      pg.textAlign(LEFT);
       body = speak[9].substring(trimChars);
-      text(body, width/8, height/2);
+      pg.text(body, width/8, height/2);
       body = speak[10].substring(trimChars);
-      text(body, width/8, height/2 + 50);
+      pg.text(body, width/8, height/2 + 50);
       body = speak[11].substring(trimChars);
-      text(body, width/8, height/2 + 100);
+      pg.text(body, width/8, height/2 + 100);
     }
     // SS3
     else if(subSection == 3) { // Lines 13 - 15
-      fill(225);
-      textFont(CG24);
-      textAlign(LEFT);
+      pg.fill(225);
+      pg.textFont(CG24);
+      pg.textAlign(LEFT);
       body = speak[13].substring(trimChars);
-      text(body, width/8, height/2);
+      pg.text(body, width/8, height/2);
       body = speak[14].substring(trimChars);
-      text(body, width/8, height/2 + 50);
+      pg.text(body, width/8, height/2 + 50);
       body = speak[15].substring(trimChars);
-      text(body, width/8, height/2 + 100);
+      pg.text(body, width/8, height/2 + 100);
     }
 
-  popStyle();
+  pg.popStyle();
+  pg.popMatrix();
 }
 
 //-------------------------------------

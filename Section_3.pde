@@ -1,6 +1,6 @@
 
 //-------------------------------------
-// Section 1  :  bombIR
+// Section 1  :  ACCESS(-ABILITY)
 //-------------------------------------
 
 void section3() {
@@ -49,15 +49,15 @@ void section3() {
     }
     // SS3
     else if(subSection == 3) {
-      image(bombirImages[0], 160, 0); 
+      //image(bombirImages[0], 160, 0); 
     }
     // SS4
     else if(subSection == 4) {
-      image(bombirImages[1], 160, 0); 
+      //image(bombirImages[1], 160, 0); 
     }
     // SS5
     else if(subSection == 5) {
-      image(bombirImages[2], 240, 60); 
+      //image(bombirImages[2], 240, 60); 
     }
     
   popStyle();
