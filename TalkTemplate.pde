@@ -51,6 +51,9 @@ PFont CG18, CG24, CG36, CG48;
 // Assets
 PImage[] images;
 
+// Timer
+int mins, sec;
+
 // GML
 Gml gml;
 Timer timer = new Timer();
@@ -146,7 +149,7 @@ void setup() {
 
 void draw() {
   // Background
-  background(255);
+  background(0);
   
   // Start Buffer
   pg.beginDraw();
@@ -183,6 +186,15 @@ void draw() {
   
   // Draw Buffer
   image(pg, 0, 0);
+  
+  // Time
+  sec = ( millis() / 1000 );
+  
+  fill(225);
+  textFont(CG24);
+  textAlign(LEFT);
+  
+  text("Elapsed Time: " + sec/60 + ":" + sec, width * 0.1, height * 0.9);
   
 }
 

@@ -12,7 +12,7 @@ void section1() {
     pg.textFont(Header2);
     pg.textAlign(CENTER);
     title = speak[5].substring(trimChars);
-    pg.text(title, width/2, height * 0.2);
+    pg.text(title, pg.width/2, pg.height * 0.2);
     
     // Body 
     if(subSection == 1) { // Lines 06 - 07
@@ -20,7 +20,7 @@ void section1() {
       pg.textFont(CG24);
       pg.textAlign(LEFT);
       body = speak[6].substring(trimChars);
-      pg.text(body, width/8, height/2);
+      pg.text(body, pg.width/8, pg.height/2);
       body = speak[7].substring(trimChars);
       pg.text(body, width/8, height/2 + 50);   
     }
