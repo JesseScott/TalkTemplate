@@ -23,25 +23,35 @@ import gml4u.utils.*;
 import gml4u.utils.Timer;
 import gml4u.model.*;
 
+import java.util.Properties;
+
+
 //-------------------------------------
 // DECLARATIONS
 //-------------------------------------
 
+// Graphics Buffer
 PGraphics pg;
 int pgw = 1280;
 int pgh = 720;
 int sw = 1280;
 int sh = 1024;
 
+// Fonts
 PFont Header1, Header2, Header3, Body;
 PFont CG18, CG24, CG36, CG48;
 
+// Assets
 PImage[] bombirImages;
 PImage[] sonicdriftImages;
 
+// GML
 Gml gml;
 Timer timer = new Timer();
 int timeMax = 30;
+
+//Settings
+P5Properties properties;
 
 //-------------------------------------
 // VARIABLES
