@@ -65,8 +65,7 @@
 64 
 65 == INFO ==
 66 WebLinks, etc.
-67 memelab.ca
-68 graffitiresearchlab.ca / de
-69 processingvancouver.ca
-70 jesses.co.tt
-71 github.com/jessescott
+67 
+68 graffitiresearchlab.ca
+69 jesses.co.tt
+70 github.com/jessescott
