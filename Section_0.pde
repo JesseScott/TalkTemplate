@@ -33,7 +33,7 @@ void section0() {
         }
           Vec3D v = new Vec3D(p);
           v.scaleSelf(pg.width/2);
-          pg.noStroke();
+          pg.stroke(255, 0, 0);
           pg.fill(random(255), random(55), random(55));
           pg.ellipse(v.x, v.y, random(10,20), random(10, 20));
       }

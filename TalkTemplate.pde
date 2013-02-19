@@ -48,8 +48,7 @@ PFont Header1, Header2, Header3, Body;
 PFont CG18, CG24, CG36, CG48;
 
 // Assets
-PImage[] bombirImages;
-PImage[] sonicdriftImages;
+PImage[] images;
 
 // GML
 Gml gml;
