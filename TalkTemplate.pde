@@ -24,6 +24,7 @@ import gml4u.utils.Timer;
 import gml4u.model.*;
 
 import java.util.Properties;
+//import java.awt.Frame.*;
 
 
 //-------------------------------------
@@ -107,7 +108,6 @@ void setup() {
   frame.setLocation(0,0);
   if(NumScreens >=2) {
     f2 = new PFrame((PApplet)(new secondApplet()), SecondScreenOffset, SecondScreenWidth, SecondScreenHeight);
-    //f2 = new PFrame();
   }
   
   // Buffer
@@ -125,7 +125,7 @@ void setup() {
   CG48 = createFont("fonts/CenturyGothic-48", 48, true);
   
   // Speak
-  speak = loadStrings("siat.txt");
+  speak = loadStrings("talk/syncretic.txt");
   
   // Assets
 

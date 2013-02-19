@@ -16,7 +16,7 @@ public class PFrame extends Frame {
         addNotify(); 
         setLocation(0, 0);
         s.init();
-        //show();
+        show();
         setVisible(true);
     }
 }
