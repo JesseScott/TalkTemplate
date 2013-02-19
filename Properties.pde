@@ -1,4 +1,8 @@
 
+//-------------------------------------
+// PROPERTIES
+//-------------------------------------
+
 class P5Properties extends Properties {
  
   boolean getBooleanProperty(String id, boolean defState) {

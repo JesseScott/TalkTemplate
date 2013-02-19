@@ -31,7 +31,11 @@ import java.util.Properties;
 //-------------------------------------
 
 // Graphics Buffer
-PGraphics pg;
+PGraphics pg, s2;
+
+//Windows
+secondApplet s;
+PFrame f2;
 
 // Properties
 int NumScreens;
@@ -97,12 +101,18 @@ void setup() {
   // Screen
   size(FirstScreenWidth, FirstScreenHeight, JAVA2D);
   smooth();
-  
   background(0);
   textAlign(CENTER);
   
+  // Second Frame
+  frame.setLocation(0,0);
+  if(NumScreens >=2) {
+    f2 = new PFrame((PApplet)(new secondApplet()), SecondScreenOffset, SecondScreenWidth, SecondScreenHeight);
+    //f2 = new PFrame();
+  }
+  
   // Buffer
-  pg = createGraphics(BufferWidth, BufferHeight);
+  pg = createGraphics(BufferWidth, BufferHeight, JAVA2D);
   
   // Fonts
   Header1 = createFont("fonts/Header1", 96, true);
