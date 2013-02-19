@@ -24,7 +24,7 @@ import gml4u.utils.Timer;
 import gml4u.model.*;
 
 import java.util.Properties;
-//import java.awt.Frame.*;
+import java.awt.Frame;
 
 
 //-------------------------------------
