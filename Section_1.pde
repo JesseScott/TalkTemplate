@@ -13,7 +13,7 @@ void section1() {
     pg.fill(255);
     pg.textFont(Header2);
     pg.textAlign(CENTER);
-    title = speak[5].substring(trimChars);
+    title = speak[offset].substring(trimChars);
     pg.text(title, pg.width/2, pg.height * 0.2);
     
     // Body 

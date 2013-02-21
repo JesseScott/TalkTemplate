@@ -1,71 +1,71 @@
-00 == TITLE ==
-01 BrillianteCite | CivicBright
-02 Jesse Scott
-03 Graffiti Research Lab Canada | Germany
-04 
-05 
+00 <BrillianteCite | CivicBright>
+01 Hexagram CIAM 
+02 Syncretic Transcodings seminar
+03
+04 Jesse Scott
+05 Graffiti Research Lab Canada | Germany  
 06 
 07 
 08 
 09 
-10 == INTRO ==
-11 
-12
+10 <GRAFFITI RESEARCH LAB>
+11 G.R.L. is dedicated to outfitting graffiti writers, street artists, and political protesters
+12 with open source tools for urban communication
 13 
-14 
+14 tactical media, open source, hackery, locative media, site-specific installations, responsive architecture
 15 
 16 
-17 
+17 presented at Mutek, Nuit Blanche, New Forms, Transmediale, Ars Electronica, … 
 18 
 19 
-20 == PROJ 1 ==
-21 while at a residency at the Banff New Media Institute
-22 	-- SS2 --
-23 .. it was an ideal project to start off with, as the software element was not
-24 actually very difficult, but the logistical setup made it seem more impressive!
-25 	-- SS3 --
-26	-- SS4 --
-27	-- SS5 --
-28
-29 == PROJ 2 == 
-30 VJ Apps
-31 I started making VJ applications with Pure Data, then quickly moved to Processing
-32 (I love Pd, but it wasn't very good for video/generative visuals at that point…)
-33 Processing was ideally suited for making generative visuals, basic particle systems, etc.
-34 	-- SS1
-35 Making these kind of applications allowed me to code small, focused programs
-36 but forced me to think about program architecture, interaction, and performance issues,
-37 and helped me understand classes, arrays, and the larger features of Java...
-38 (but also forced me into learning openFrameworks / C++ pretty quickly! )
-39 == PROJ 3 == 
-40 Original GCode
-41 A tool designed for rapid 2D fabrication of graffiti stencils,
-42 built as part of Graffiti Research Lab Germany for our exhibition at Transmediale 11,
-43 it uses a webcam and custom capture frame to trace a 'tag' and export it to GCode…
-44 	-- SS2 --
-45 	-- SS3 --
-46 	-- SS4 -- 
+20 <EPHEMERALITY>
+21 few material traces
+22 archive ?? (Derrida)
+23 secondary representation -> almost intentional for us (these days)
+24 not a product = anti-monument
+25 allows re reflection, deep learning, reinterpretation
+26 aka Minor Histories
+27 ad hoc
+28 self terminating
+29 
+30 <MONUMENTALITY>
+31 territorialization
+32 passive viewing
+33 negation of difference
+34 
+35 
+36 
+37 
+38 
+39 
+40 <THE TAG>
+41 
+42 
+43 
+44 
+45 
+46 
 47 
 48 
-49 == PROJ 4 ==
-50 SonicDrift
-51 A locative media framework for the Android OS
-52 Made during the M.A.R.I.N. residency in Norway, Sweden, Lithuania
-53 Records sounds on the Android hardware, saves them with the current GPS,
-54 and plays them back when that GPS point is re-reached… 
-55 	-- SS2 --
-56 	-- SS3 --
-57 	-- SS4 -- 
+49 
+50 <FREE AS IN SPEECH>
+51 
+52 
+53 
+54 
+55 
+56 
+57 
 58 
-59 == PROJ 5 ==
-60 PWN THE WALL
-61 An extension of 'bombIR' - shared across multiple screens / locations
-62 Uses Graffiti Markup Language to transfer data to/from a Server
-63 and re-parses the data upon receipt, leaving the heavy lifting to the local machine...
+59 
+60 <FREE AS IN BEER>
+61 accessibility
+62 access ability
+63 
 64 
-65 == INFO ==
-66 WebLinks, etc.
+65 
+66 
 67 
-68 graffitiresearchlab.ca
-69 jesses.co.tt
-70 github.com/jessescott
+68 
+69 
+70 <THE TAG>
