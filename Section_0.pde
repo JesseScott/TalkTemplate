@@ -7,6 +7,8 @@ void section0() {
   pg.pushStyle();
   pg.pushMatrix();
     
+    offset = 0;
+    
     // Style
     pg.fill(255);
     pg.stroke(255);

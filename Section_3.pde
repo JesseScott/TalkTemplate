@@ -1,10 +1,13 @@
 
 //-------------------------------------
-// Section 1  :  ACCESS(-ABILITY)
+// Section 3  :  ACCESS(-ABILITY)
 //-------------------------------------
 
 void section3() {
-  pushStyle();
+  pg.pushStyle();
+  pg.pushMatrix();
+    
+    offset = 30;
     
     // Title -- Line 17
     // is inside subSection 1 & 2
@@ -60,7 +63,8 @@ void section3() {
       //image(bombirImages[2], 240, 60); 
     }
     
-  popStyle();
+  pg.popStyle();
+  pg.popMatrix();
 }
 
 //-------------------------------------

@@ -4,7 +4,10 @@
 //-------------------------------------
 
 void section4() {
-  pushStyle();
+  pg.pushStyle();
+  pg.pushMatrix();
+    
+    offset = 40;
     
     // Title -- Line 40
     fill(255);
@@ -38,7 +41,8 @@ void section4() {
       //image(bombirImages[2], 160, 0); 
     }
     
-  popStyle();
+  pg.popStyle();
+  pg.popMatrix();
 }
 
 //-------------------------------------

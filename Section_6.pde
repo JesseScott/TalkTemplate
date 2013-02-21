@@ -4,7 +4,10 @@
 //-------------------------------------
 
 void section6() {
-  pushStyle();
+  pg.pushStyle();
+  pg.pushMatrix();
+    
+    offset = 60;
     
     // Title -- Line 60
     fill(255);
@@ -29,7 +32,8 @@ void section6() {
     }
 
     
-  popStyle();
+  pg.popStyle();
+  pg.popMatrix();
 }
 
 //-------------------------------------

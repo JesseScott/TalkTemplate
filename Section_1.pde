@@ -7,6 +7,8 @@ void section1() {
   pg.pushStyle();
   pg.pushMatrix();
     
+    offset = 10;
+    
     // Title -- Line 05
     pg.fill(255);
     pg.textFont(Header2);

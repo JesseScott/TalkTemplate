@@ -4,7 +4,10 @@
 //-------------------------------------
 
 void section5() {
-  pushStyle();
+  pg.pushStyle();
+  pg.pushMatrix();
+    
+    offset = 50;
     
     // Title -- Line 50
     fill(255);
@@ -40,7 +43,8 @@ void section5() {
       //image(sonicdriftImages[2], 0, 0); 
     }
 
-  popStyle();
+  pg.popStyle();
+  pg.popMatrix();
 }
 
 //-------------------------------------

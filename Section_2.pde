@@ -1,10 +1,12 @@
 
 //-------------------------------------
-// Section 3  :  PROJECTION 
+// Section 2  :  PROJECTION 
 //-------------------------------------
 
 void section2() {
   pushStyle();
+    
+    offset = 20;
     
     // Title -- Line 30
     fill(255);

@@ -51,13 +51,9 @@ PFont CG18, CG24, CG36, CG48;
 // Assets
 PImage[] images;
 
-// Timer
-int mins, sec;
-
 // GML
 Gml gml;
 Timer timer = new Timer();
-int timeMax = 30;
 
 //Settings
 P5Properties properties;
@@ -72,6 +68,10 @@ int subSection = 1;
 int trimChars = 2;
 
 String speak[];
+int offset;
+
+int mins, sec;    // Timer
+int timeMax = 30; // GML
 
 //-------------------------------------
 // SETUP

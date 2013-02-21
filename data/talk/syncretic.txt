@@ -1,24 +1,24 @@
 00 == TITLE ==
-01 SIAT Talk | Nov '12
+01 BrillianteCite | CivicBright
 02 Jesse Scott
-03 Selected Processing Applications
-04 == INTRO ==
-05 Who I Am + What I'm About
-06 "Jesse Scott creates and exhibits work in the genre formerly known as new media"
-07 Film School Dropout > VJ > Pure Data > Processing > openFrameworks, etc…
-08 	-- SS2 --
-09 I've been using Processing for approximately 5 years...
-10 I started making VJ apps, then interactive installations...
-11 Then Android applications, then Data Visualizations, Kinect Games, etc.
-12	-- SS3 --
-13 I have no formal Computer Science training - all of my coding skills are self-taught
-14 (or gained through the internet, more truthfully)...
-15 As such, I am deeply invested in the idea of open source - it's given me all that I have
-16 == PROJ 1 ==
-17 bombIR
-18 My 1st major project was called 'bombIR' - a glorified drawing program that would
-19 be controlled alternatively by a touch screen or an infrared pen...
-20 I built it as part of Graffiti Research Lab Canada, alongside Ed Jordan
+03 Graffiti Research Lab Canada | Germany
+04 
+05 
+06 
+07 
+08 
+09 
+10 == INTRO ==
+11 
+12
+13 
+14 
+15 
+16 
+17 
+18 
+19 
+20 == PROJ 1 ==
 21 while at a residency at the Banff New Media Institute
 22 	-- SS2 --
 23 .. it was an ideal project to start off with, as the software element was not
