@@ -38,6 +38,14 @@ void keyPressed() {
     section = 7;
     subSection = 0;
   } 
+  else if(key == '8') {
+    section = 8;
+    subSection = 0;
+  } 
+  else if(key == '9') {
+    section = 9;
+    subSection = 0;
+  } 
   
   if(key == CODED) {
     if(keyCode == RIGHT) {
