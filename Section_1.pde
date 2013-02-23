@@ -17,38 +17,34 @@ void section1() {
     pg.text(title, pg.width/2, pg.height * 0.2);
     
     // Body 
-    if(subSection == 1) { // Lines 06 - 07
+    if(subSection == 1) { // Lines 11 - 12
       pg.fill(225);
       pg.textFont(CG24);
       pg.textAlign(LEFT);
-      body = speak[6].substring(trimChars);
+      body = speak[offset +1].substring(trimChars);
       pg.text(body, pg.width/8, pg.height/2);
-      body = speak[7].substring(trimChars);
-      pg.text(body, width/8, height/2 + 50);   
+      body = speak[offset +2].substring(trimChars);
+      pg.text(body, pg.width/8, pg.height/2 + 50);   
     }
     // SS2
-    else if(subSection == 2) { // Lines 09 - 11
+    else if(subSection == 2) { // Lines 14 - 15
       pg.fill(225);
       pg.textFont(CG24);
       pg.textAlign(LEFT);
-      body = speak[9].substring(trimChars);
-      pg.text(body, width/8, height/2);
-      body = speak[10].substring(trimChars);
-      pg.text(body, width/8, height/2 + 50);
-      body = speak[11].substring(trimChars);
-      pg.text(body, width/8, height/2 + 100);
+      body = speak[offset +4].substring(trimChars);
+      pg.text(body, pg.width/8, pg.height/2);
+      body = speak[offset +5].substring(trimChars);
+      pg.text(body, pg.width/8, pg.height/2 + 50);
     }
     // SS3
-    else if(subSection == 3) { // Lines 13 - 15
+    else if(subSection == 3) { // Lines 17 - 18
       pg.fill(225);
       pg.textFont(CG24);
       pg.textAlign(LEFT);
-      body = speak[13].substring(trimChars);
-      pg.text(body, width/8, height/2);
-      body = speak[14].substring(trimChars);
-      pg.text(body, width/8, height/2 + 50);
-      body = speak[15].substring(trimChars);
-      pg.text(body, width/8, height/2 + 100);
+      body = speak[offset +7].substring(trimChars);
+      pg.text(body, pg.width/8, pg.height/2);
+      body = speak[offset +8].substring(trimChars);
+      pg.text(body, pg.width/8, pg.height/2 + 50);
     }
 
   pg.popStyle();

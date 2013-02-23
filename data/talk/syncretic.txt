@@ -12,12 +12,22 @@
 11 G.R.L. is dedicated to outfitting graffiti writers, street artists, and political protesters
 12 with open source tools for urban communication
 13 
-14 tactical media, open source, hackery, locative media, site-specific installations, responsive architecture
-15 
+14 tactical media, open source, hackery, locative media, site-specific installations…
+15 presented at Mutek, Nuit Blanche, New Forms, Transmediale, Ars Electronica, ... 
 16 
-17 presented at Mutek, Nuit Blanche, New Forms, Transmediale, Ars Electronica, … 
-18 
+17 History
+18 NYC -> MTL ->
 19 
+20 <PROJECTS>
+21 LASER Tag
+22 LED Throwies
+23 bombIR
+24 blitzTag
+25 Original GCode
+26 PWN The Wall
+27 GML
+28 
+29 
 20 <EPHEMERALITY>
 21 few material traces
 22 archive ?? (Derrida)
