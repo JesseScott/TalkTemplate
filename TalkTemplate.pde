@@ -107,14 +107,15 @@ void setup() {
   background(0);
   textAlign(CENTER);
   
+  // Buffer
+  pg = createGraphics(BufferWidth, BufferHeight, JAVA2D);
+  
   // Second Frame
   frame.setLocation(0,0);
   if(NumScreens >=2) {
     f2 = new PFrame((PApplet)(new secondApplet()), SecondScreenOffset, SecondScreenWidth, SecondScreenHeight);
+    s2 = createGraphics(SecondScreenWidth, SecondScreenHeight, JAVA2D);
   }
-  
-  // Buffer
-  pg = createGraphics(BufferWidth, BufferHeight, JAVA2D);
   
   // Fonts
   Header1 = createFont("fonts/Header1", 96, true);

@@ -47,12 +47,10 @@ public class secondApplet extends PApplet {
       if(s2 != null) {
         // Copy
         s2.beginDraw();
-         // s2.copy(pg, 0, 0, pg.width, pg.height, 0, 0, s2.width, s2.height);
+          s2.copy(pg, 0, 0, pg.width, pg.height, 0, 0, s2.width, s2.height);
         s2.endDraw();
-        //image(pg, 0, 0);
-        fill(0);
-        rect(0,0,100,100);
-        line(mouseX, mouseY, pmouseX, pmouseY);
+        image(s2, 0, 0);
+
       }
     }
     
