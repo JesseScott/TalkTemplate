@@ -14,9 +14,9 @@ public class PFrame extends Frame {
         setUndecorated(false);   
         setResizable(false);
         addNotify(); 
-        setLocation(1000, 0);
+        setLocation(ScreenOffset, 0);
         s.init();
-        //show();
+        show();
         setVisible(true);
     }
 }
@@ -40,7 +40,7 @@ public class secondApplet extends PApplet {
   
     public void setup() {
       size(SecondScreenWidth, SecondScreenHeight);
-      background(255);
+      background(0);
     }
  
     synchronized public void draw() {

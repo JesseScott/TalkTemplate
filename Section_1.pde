@@ -9,7 +9,7 @@ void section1() {
     
     offset = 10;
     
-    // Title -- Line 05
+    // Title
     pg.fill(255);
     pg.textFont(Header2);
     pg.textAlign(CENTER);

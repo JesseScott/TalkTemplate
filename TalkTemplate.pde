@@ -64,7 +64,7 @@ P5Properties properties;
 
 String title, subtitle, body;
 int section = 0;
-int subSection = 1;
+int subSection = 0;
 int trimChars = 2;
 
 String speak[];
@@ -132,7 +132,8 @@ void setup() {
   speak = loadStrings("talk/syncretic.txt");
   
   // Assets
-
+  images = new PImage[10];
+  images[0] = loadImage("images/together.png");
 
   // GML
   PropertyConfigurator.configure(sketchPath+"/log4j.properties");
