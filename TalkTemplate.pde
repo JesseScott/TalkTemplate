@@ -112,7 +112,7 @@ void setup() {
   
   // Second Frame
   frame.setLocation(0,0);
-  if(NumScreens >=2) {
+  if(NumScreens >= 2) {
     f2 = new PFrame((PApplet)(new secondApplet()), SecondScreenOffset, SecondScreenWidth, SecondScreenHeight);
     s2 = createGraphics(SecondScreenWidth, SecondScreenHeight, JAVA2D);
   }
@@ -129,7 +129,7 @@ void setup() {
   CG48 = createFont("fonts/CenturyGothic-48", 48, true);
   
   // Speak
-  speak = loadStrings("talk/syncretic.txt");
+  speak = loadStrings("talk/codemotion.txt");
   
   // Assets
   images = new PImage[10];

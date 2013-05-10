@@ -1,6 +1,6 @@
-00 <BrillianteCite | CivicBright>
-01 Hexagram CIAM 
-02 Syncretic Transcodings seminar
+00 Creative Coding Roundup
+01 <CodeMotion>
+02 Berlin
 03
 04 Jesse Scott
 05 Graffiti Research Lab Canada | Germany  
