@@ -62,13 +62,13 @@ P5Properties properties;
 // VARIABLES
 //-------------------------------------
 
-String title, subtitle, body;
-int section = 0;
-int subSection = 0;
-int trimChars = 2;
+String title, subtitle, body; // Strings to hold our text
+int section = 0; // Major Sections
+int subSection = 0;  // Sub Sections
+int trimChars = 2; // Number of Characters to Trim Off The Line
 
-String speak[];
-int offset;
+String speak[]; // Our Text File
+int offset; // Based off of Section
 
 int mins, sec;    // Timer
 int timeMax = 30; // GML
@@ -130,6 +130,9 @@ void setup() {
   
   // Speak
   speak = loadStrings("talk/codemotion.txt");
+  for(int i = 0; i < speak.length; i++) {
+    println(speak[i]); 
+  }
   
   // Assets
   images = new PImage[10];
@@ -182,6 +185,12 @@ void draw() {
   else if(section == 7) {
     section7(); 
   }
+  else if(section == 8) {
+    section8(); 
+  }
+  else if(section == 9) {
+    section9(); 
+  }
   
   // End Buffer
   pg.endDraw();
@@ -199,10 +208,15 @@ void draw() {
   
   fill(225);
   textFont(CG24);
-  textAlign(LEFT);
-  
+  textAlign(LEFT); 
   text("Elapsed Time: " + nf(mins, 2) + ":" + nf(sec, 2), width * 0.1, height * 0.9);
  
+  // State
+  fill(225);
+  textFont(CG24);
+  textAlign(RIGHT);
+  text("Section: " + section + " Sub-Section: " + subSection, width * 0.9, height * 0.9);
+
   
 }
 

@@ -1,46 +1,34 @@
 
 //-------------------------------------
-// Section 5  :  SonicDrift
+// Section 5  :  OPEN FRAMEWORKS
 //-------------------------------------
 
 void section5() {
   pg.pushStyle();
   pg.pushMatrix();
     
+    // Offset
     offset = 50;
+  
+    // Title
+    title = speak[offset].substring(trimChars);
     
-    // Title -- Line 50
-    fill(255);
-    textFont(Header2);
-    textAlign(CENTER);
-    title = speak[50].substring(trimChars);
-    text(title, width/2, height * 0.2);
+    // Body   
+    body = speak[offset + subSection].substring(trimChars);  
     
-    // Body 
-    if(subSection == 1) { // Lines 51 - 53
-      fill(225);
-      textFont(CG24);
-      textAlign(LEFT);
-      body = speak[51].substring(trimChars);
-      text(body, width/8, height/2);
-      body = speak[52].substring(trimChars);
-      text(body, width/8, height/2 + 50);   
-      body = speak[53].substring(trimChars);
-      text(body, width/8, height/2 + 100);
-      body = speak[54].substring(trimChars);
-      text(body, width/8, height/2 + 150);
+    // Title
+    if(subSection == 0) {
+      pg.fill(255);
+      pg.textFont(Header2);
+      pg.textAlign(CENTER);
+      pg.text(title, width/2, height * 0.2);
     }
-    // SS2
-    else if(subSection == 2) {
-      //image(sonicdriftImages[0], 0, 0); 
-    }
-    // SS3
-    else if(subSection == 3) {
-      //image(sonicdriftImages[1], 0, 0); 
-    }
-    // SS4
-    else if(subSection == 4) {
-      //image(sonicdriftImages[2], 0, 0); 
+    // Body
+    else {
+      pg.fill(225);
+      pg.textFont(CG24);
+      pg.textAlign(LEFT);
+      pg.text(body, width/2 - 100, height/2);  
     }
 
   pg.popStyle();

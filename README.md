@@ -3,7 +3,7 @@ Talk-Template
 
 a Processing template for a simple slideshow presentation
 
-# CodeEMotion branch
+# CodeMotion branch
 
 developed for a talk given at http://berlin.codemotionworld.com/
 

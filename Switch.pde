@@ -50,11 +50,11 @@ void keyPressed() {
   if(key == CODED) {
     if(keyCode == RIGHT) {
       subSection ++;
-      if(subSection == 9) subSection = 9; 
+      if(subSection >= 10) subSection = 9; 
     } 
     else if(keyCode == LEFT) {
       subSection --;
-      if(subSection == 1) subSection = 1; 
+      if(subSection <= 0) subSection = 1; 
     }
   }
   

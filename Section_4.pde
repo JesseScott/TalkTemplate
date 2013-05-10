@@ -1,44 +1,34 @@
 
 //-------------------------------------
-// Section 4  :  Original GCode
+// Section 4  :  PROCESSING
 //-------------------------------------
 
 void section4() {
   pg.pushStyle();
   pg.pushMatrix();
     
+    // Offset
     offset = 40;
+  
+    // Title
+    title = speak[offset].substring(trimChars);
     
-    // Title -- Line 40
-    fill(255);
-    textFont(Header2);
-    textAlign(CENTER);
-    title = speak[40].substring(trimChars);
-    text(title, width/2, height * 0.2);
+    // Body   
+    body = speak[offset + subSection].substring(trimChars);  
     
-    // Body 
-    if(subSection == 1) { // Lines 41 - 43
-      fill(225);
-      textFont(CG24);
-      textAlign(LEFT);
-      body = speak[41].substring(trimChars);
-      text(body, width/8, height/2);
-      body = speak[42].substring(trimChars);
-      text(body, width/8, height/2 + 50);   
-      body = speak[43].substring(trimChars);
-      text(body, width/8, height/2 + 100);
+    // Title
+    if(subSection == 0) {
+      pg.fill(255);
+      pg.textFont(Header2);
+      pg.textAlign(CENTER);
+      pg.text(title, width/2, height * 0.2);
     }
-    // SS2
-    else if(subSection == 2) {
-      //image(bombirImages[0], 160, 0); 
-    }
-    // SS3
-    else if(subSection == 3) {
-      //image(bombirImages[1], 160, 0); 
-    }
-    // SS4
-    else if(subSection == 4) {
-      //image(bombirImages[2], 160, 0); 
+    // Body
+    else {
+      pg.fill(225);
+      pg.textFont(CG24);
+      pg.textAlign(LEFT);
+      pg.text(body, width/2 - 100, height/2);  
     }
     
   pg.popStyle();

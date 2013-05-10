@@ -1,10 +1,9 @@
-00 Creative Coding Roundup
-01 <CodeMotion>
-02 Berlin
-03
-04 Jesse Scott
-05 Graffiti Research Lab Canada | Germany  
-06 
+01 Creative Coding Roundup
+02 <CodeMotion>
+03 Berlin
+04
+05 Jesse Scott
+06 Graffiti Research Lab Canada | Germany   
 07 
 08 
 09 
@@ -14,37 +13,27 @@ interactive, immersive, and mobile spaces13 I am part of several collectives, i
 17 
 18 
 19 
-20 <PROJECTS>
-21 LASER Tag
-22 LED Throwies
-23 bombIR
-24 blitzTag
-25 Original GCode
-26 PWN The Wall
-27 GML
+20 ROADMAP
+21 definition
+22 what i am talking about
+22 what i am not talking about
+24
+25 
+26 
+27 
 28 
 29 
-20 <EPHEMERALITY>
-21 few material traces
-22 archive ?? (Derrida)
-23 secondary representation -> almost intentional for us (these days)
-24 not a product = anti-monument
-25 allows re reflection, deep learning, reinterpretation
-26 aka Minor Histories
-27 ad hoc
-28 self terminating
-29 
-30 <MONUMENTALITY>
-31 territorialization
-32 passive viewing
-33 negation of difference
-34 
+30 PICTURES
+31 Processing
+32 openFrameworks
+33 Cinder
+34 galleries
 35 
 36 
 37 
 38 
 39 
-40 <THE TAG>
+40 PROCESSING
 41 
 42 
 43 
@@ -54,7 +43,7 @@ interactive, immersive, and mobile spaces13 I am part of several collectives, i
 47 
 48 
 49 
-50 <FREE AS IN SPEECH>
+50 OPEN FRAMEWORKS
 51 
 52 
 53 
@@ -64,9 +53,9 @@ interactive, immersive, and mobile spaces13 I am part of several collectives, i
 57 
 58 
 59 
-60 <FREE AS IN BEER>
-61 accessibility
-62 access ability
+60 CINDER
+61 
+62 
 63 
 64 
 65 
@@ -74,4 +63,33 @@ interactive, immersive, and mobile spaces13 I am part of several collectives, i
 67 
 68 
 69 
-70 <AMATEUR>
+70 OTHERS
+71 Flash / AIR
+72 Lua AV
+73 Polycode
+74 C4
+75 IS
+76 Field
+77 Plask
+78 
+79 
+80 TOPICS
+81 iOS
+82 Android
+83 Gaming
+84 Web
+85 Physical
+86 
+87 
+88 
+89 
+90 COMMUNITY
+91 resources
+92 teams
+93 future
+94 
+95 
+96 
+97 
+98 
+99 

@@ -1,39 +1,37 @@
 
 //-------------------------------------
-// Section 7  :  INFO
+// Section 7  :  OTHERS
 //-------------------------------------
 
 void section7() {
   pg.pushStyle();
   pg.pushMatrix();
     
+    // Offset
     offset = 70;
+  
+    // Title
+    title = speak[offset].substring(trimChars);
     
-    // Title -- Line 66
-    fill(255);
-    textFont(Header2);
-    textAlign(CENTER);
-    title = speak[66].substring(trimChars);
-    text(title, width/2, height * 0.2);
+    // Body   
+    body = speak[offset + subSection].substring(trimChars);  
     
-    // Body 
-    if(subSection == 1) { // Lines 61 - 63
-      fill(225);
-      textFont(CG24);
-      textAlign(LEFT);
-      body = speak[67].substring(trimChars);
-      text(body, width/2 - 100, height/2);
-      body = speak[68].substring(trimChars);
-      text(body, width/2 - 100, height/2 + 50);   
-      body = speak[69].substring(trimChars);
-      text(body, width/2 - 100, height/2 + 100);
-      body = speak[70].substring(trimChars);
-      text(body, width/2 - 100, height/2 + 150);
-      body = speak[71].substring(trimChars);
-      text(body, width/2 - 100, height/2 + 200);
+    // Title
+    if(subSection == 0) {
+      pg.fill(255);
+      pg.textFont(Header2);
+      pg.textAlign(CENTER);
+      pg.text(title, width/2, height * 0.2);
+    }
+    // Body
+    else {
+      pg.fill(225);
+      pg.textFont(CG24);
+      pg.textAlign(LEFT);
+      pg.text(body, width/2 - 100, height/2);  
     }
 
-    
+      
   pg.popStyle();
   pg.popMatrix();
 }
