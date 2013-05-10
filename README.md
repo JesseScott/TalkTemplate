@@ -3,9 +3,9 @@ Talk-Template
 
 a Processing template for a simple slideshow presentation
 
-# HEXAGRAM branch
+# CodeEMotion branch
 
-developed for a talk given at http://hexagramciam.org/syncretic.php
+developed for a talk given at http://berlin.codemotionworld.com/
 
 # all images/assets are all rights reserved
 
