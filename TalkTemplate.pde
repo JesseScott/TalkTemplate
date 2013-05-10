@@ -140,7 +140,7 @@ void setup() {
 
   // GML
   PropertyConfigurator.configure(sketchPath+"/log4j.properties");
-  gml = GmlParsingHelper.getGml(sketchPath+"/data/gml/tag.xml", false);
+  gml = GmlParsingHelper.getGml(sketchPath+"/data/gml/ccr.xml", false);
   GmlUtils.timeBox(gml, timeMax, true);
   timer.start();
 
