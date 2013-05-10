@@ -8,15 +8,11 @@
 07 
 08 
 09 
-10 <GRAFFITI RESEARCH LAB>
-11 G.R.L. is dedicated to outfitting graffiti writers, street artists, and political protesters
-12 with open source tools for urban communication
-13 
-14 tactical media, open source, hackery, locative media, site-specific installations…
-15 presented at Mutek, Nuit Blanche, New Forms, Transmediale, Ars Electronica, ... 
-16 
-17 History
-18 NYC -> MTL ->
+10 JESSE SCOTT
+11 So... welcome, thank you... my name is Jesse Scott12 My clever way of saying I am a artist and freelance developer working in 
+interactive, immersive, and mobile spaces13 I am part of several collectives, including the memelab, Graffiti Research Lab, 14 I run the Processing Vancouver meetup15 I teach Interaction Design and iOS / Android development16 and I am the technology director at Hybridity, a local digital agency  
+17 
+18 
 19 
 20 <PROJECTS>
 21 LASER Tag

@@ -133,7 +133,7 @@ void setup() {
   
   // Assets
   images = new PImage[10];
-  images[0] = loadImage("images/together.png");
+  images[0] = loadImage("images/cc map.jpg");
 
   // GML
   PropertyConfigurator.configure(sketchPath+"/log4j.properties");
@@ -191,12 +191,18 @@ void draw() {
   
   // Time
   sec = ( millis() / 1000 );
+  mins = sec/60;
+  
+  if(mins >= 1) {
+    sec = sec - 60;
+  }
   
   fill(225);
   textFont(CG24);
   textAlign(LEFT);
   
-  text("Elapsed Time: " + sec/60 + ":" + sec, width * 0.1, height * 0.9);
+  text("Elapsed Time: " + nf(mins, 2) + ":" + nf(sec, 2), width * 0.1, height * 0.9);
+ 
   
 }
 
