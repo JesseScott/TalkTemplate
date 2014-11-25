@@ -3,26 +3,8 @@
 // IMPORTS
 //-------------------------------------
 
-import toxi.math.conversion.*;
-import toxi.geom.*;
-import toxi.math.*;
-import toxi.geom.mesh2d.*;
-import toxi.util.datatypes.*;
-import toxi.util.events.*;
-import toxi.geom.mesh.subdiv.*;
-import toxi.geom.mesh.*;
-import toxi.math.waves.*;
-import toxi.util.*;
-import toxi.math.noise.*;
 
 import org.apache.log4j.PropertyConfigurator;
-
-import gml4u.brushes.*;
-import gml4u.drawing.*;
-import gml4u.utils.*;
-import gml4u.utils.Timer;
-import gml4u.model.*;
-
 import java.util.Properties;
 import java.awt.Frame;
 
@@ -51,33 +33,30 @@ PFont CG18, CG24, CG36, CG48;
 // Assets
 PImage[] images;
 
-// Timer
-int mins, sec;
-
-// GML
-Gml gml;
-Timer timer = new Timer();
-int timeMax = 30;
-
 //Settings
 P5Properties properties;
+
 
 //-------------------------------------
 // VARIABLES
 //-------------------------------------
 
-String title, subtitle, body;
-int section = 0;
-int subSection = 1;
-int trimChars = 2;
+String title, subtitle, body;  // Strings to hold our text
+int section = 0;               // Major Sections
+int subSection = 0;            // Sub Sections
+int trimChars = 3;             // Number of Characters to Trim Off The Line
+int offset;                    // Based off of Section
+String speak[];                // Our Text File
+int speakSize;                 // Length of File
 
-String speak[];
+int mins, sec;    // Timer
 
 //-------------------------------------
 // SETUP
 //-------------------------------------
 
 void setup() {
+  
   // Properties
    try {
      // Setup
@@ -102,19 +81,20 @@ void setup() {
   }
   
   // Screen
-  size(FirstScreenWidth, FirstScreenHeight, JAVA2D);
+  size(FirstScreenWidth, FirstScreenHeight, P2D);
   smooth();
   background(0);
   textAlign(CENTER);
   
-  // Second Frame
-  frame.setLocation(0,0);
-  if(NumScreens >=2) {
-    f2 = new PFrame((PApplet)(new secondApplet()), SecondScreenOffset, SecondScreenWidth, SecondScreenHeight);
-  }
-  
   // Buffer
   pg = createGraphics(BufferWidth, BufferHeight, JAVA2D);
+  
+  // Second Frame
+  frame.setLocation(0,0);
+  if(NumScreens >= 2) {
+    f2 = new PFrame((PApplet)(new secondApplet()), SecondScreenOffset, SecondScreenWidth, SecondScreenHeight);
+    s2 = createGraphics(SecondScreenWidth, SecondScreenHeight, JAVA2D);
+  }
   
   // Fonts
   Header1 = createFont("fonts/Header1", 96, true);
@@ -128,17 +108,16 @@ void setup() {
   CG48 = createFont("fonts/CenturyGothic-48", 48, true);
   
   // Speak
-  speak = loadStrings("talk/syncretic.txt");
+  speak = loadStrings("talk/main.txt");
+  speakSize = speak.length;
+  println("-- OUR FILE LOOKS LIKE THIS: "); 
+  for(int i = 0; i < speak.length; i++) {
+    println(speak[i]); 
+  }
+  println("-- END FILE --"); 
   
   // Assets
-
-
-  // GML
-  PropertyConfigurator.configure(sketchPath+"/log4j.properties");
-  gml = GmlParsingHelper.getGml(sketchPath+"/data/gml/tag.xml", false);
-  GmlUtils.timeBox(gml, timeMax, true);
-  timer.start();
-
+  images = new PImage[10];
   
 }
 
@@ -153,33 +132,10 @@ void draw() {
   
   // Start Buffer
   pg.beginDraw();
-    pg.background(0);
+  pg.background(0);
    
   // Draw Section
-  if(section == 0) {
-    section0(); 
-  }
-  else if(section == 1) {
-    section1(); 
-  }
-  else if(section == 2) {
-    section2(); 
-  }
-  else if(section == 3) {
-    section3(); 
-  }
-  else if(section == 4) {
-    section4(); 
-  }
-  else if(section == 5) {
-    section5(); 
-  }
-  else if(section == 6) {
-    section6(); 
-  }
-  else if(section == 7) {
-    section7(); 
-  }
+  slide(section);
   
   // End Buffer
   pg.endDraw();
@@ -189,12 +145,23 @@ void draw() {
   
   // Time
   sec = ( millis() / 1000 );
+  mins = sec/60;
+  
+  if(mins >= 1) {
+    sec = sec - 60;
+  }
   
   fill(225);
   textFont(CG24);
-  textAlign(LEFT);
-  
-  text("Elapsed Time: " + sec/60 + ":" + sec, width * 0.1, height * 0.9);
+  textAlign(LEFT); 
+  text("Elapsed Time: " + nf(mins, 2) + ":" + nf(sec, 2), width * 0.05, height * 0.95);
+ 
+  // State
+  fill(225);
+  textFont(CG24);
+  textAlign(RIGHT);
+  text("Section: " + section + " Sub-Section: " + subSection, width * 0.9, height * 0.95);
+
   
 }
 
