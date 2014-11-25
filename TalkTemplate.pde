@@ -111,7 +111,7 @@ void setup() {
   CG48 = createFont("fonts/CenturyGothic-48", 48, true);
   
   // Speak
-  speak = loadStrings("talk/codemotion.txt");
+  speak = loadStrings("talk/main.txt");
   for(int i = 0; i < speak.length; i++) {
     println(speak[i]); 
   }
