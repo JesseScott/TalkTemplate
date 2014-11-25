@@ -16,82 +16,82 @@
 021 OVERVIEW
 022 Summer Out East
 023 Professional Projects
-24 Personal Projects
-25 
-26 
-27 
-28 
-29 
-30
+024 Personal Projects
+025 
+026 
+027 
+028 
+029 
+030
 031 CAFKA
-32 Invite
-33 Project
-34 Collaborators
-35 Off Shoots
-36 Future 
-37 
-38 
-39 
-40
+032 Invite
+033 Project
+034 Collaborators
+035 Off Shoots
+036 Future 
+037 
+038 
+039 
+040
 041 DISCONNECT
-42 C.A.V.E.
-43 Media Art History
-44 Cartesian vs. Embodiment 
-45 
-46 
-47 
-48 
-49 
-50
+042 C.A.V.E.
+043 Media Art History
+044 Cartesian vs. Embodiment 
+045 
+046 
+047 
+048 
+049 
+050
 051 KWILT 
-52 
-53 
-54 
-55 
-56 
-57 
-58 
-59 
-60
+052 
+053 
+054 
+055 
+056 
+057 
+058 
+059 
+060
 061 BERLIN STEP SEQUENCER 
-62 
-63 
-64 
-65 
-66 
-67 
-68 
-69 
-70
+062 
+063 
+064 
+065 
+066 
+067 
+068 
+069 
+070
 071 IX SYMPOSIUM 
-72 
-73 
-74 
-75 
-76 
-77 
-78 
-79 
-80
+072 
+073 
+074 
+075 
+076 
+077 
+078 
+079 
+080
 081 SECOND STORY 
-82 
-83 
-84 
-85 
-86 
-87 
-88 
-89
-90
+082 
+083 
+084 
+085 
+086 
+087 
+088 
+089
+090
 091 GENERATE
-92
-93
-94 
-95 
-96 
-97 
-98 
-99 
+092
+093
+094 
+095 
+096 
+097 
+098 
+099 
 100
 101 HEALTH DESIGN LAB
 102 
@@ -101,18 +101,18 @@
 106  
 107 
 108 
-09
-10 
-111 SANS SONDHEIM 12 13  14 15 16  
-17 
-18 
-19 
-20
+109
+110 
+111 SANS SONDHEIM 112 113  114 115 116  
+117 
+118 
+119 
+120
 121 YES NOVA 
-22 
-22 
-24
-25 
+122 
+122 
+124
+125 
 126 
 127 
 128 
