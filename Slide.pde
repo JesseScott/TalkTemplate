@@ -3,18 +3,22 @@
 // Section 9  :  COMMUNITY
 //-------------------------------------
 
-void section9() {
+void slide(int num) {
   pg.pushStyle();
   pg.pushMatrix();
     
      // Offset
-    offset = 90;
+    offset = num * 10;
   
-    // Title
-    title = speak[offset].substring(trimChars);
-    
-    // Body   
+    // Title + Body
+    try {
+    title = speak[offset].substring(trimChars);    
     body = speak[offset + subSection].substring(trimChars);  
+    }
+    catch(Exception e) {
+      print("ERROR:::: couldnt load - maybe Index Out Of Bounds ???");
+      e.printStackTrace();
+    }
     
     // Title
     if(subSection == 0) {

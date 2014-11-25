@@ -44,10 +44,10 @@ P5Properties properties;
 String title, subtitle, body;  // Strings to hold our text
 int section = 0;               // Major Sections
 int subSection = 0;            // Sub Sections
-int trimChars = 2;             // Number of Characters to Trim Off The Line
-
+int trimChars = 3;             // Number of Characters to Trim Off The Line
+int offset;                    // Based off of Section
 String speak[];                // Our Text File
-int offset;                     // Based off of Section
+int speakSize;                 // Length of File
 
 int mins, sec;    // Timer
 
@@ -108,6 +108,7 @@ void setup() {
   
   // Speak
   speak = loadStrings("talk/main.txt");
+  speakSize = speak.length;
   println("-- OUR FILE LOOKS LIKE THIS: "); 
   for(int i = 0; i < speak.length; i++) {
     println(speak[i]); 
@@ -135,36 +136,7 @@ void draw() {
   pg.background(0);
    
   // Draw Section
-  if(section == 0) {
-    section0(); 
-  }
-  else if(section == 1) {
-    section1(); 
-  }
-  else if(section == 2) {
-    section2(); 
-  }
-  else if(section == 3) {
-    section3(); 
-  }
-  else if(section == 4) {
-    section4(); 
-  }
-  else if(section == 5) {
-    section5(); 
-  }
-  else if(section == 6) {
-    section6(); 
-  }
-  else if(section == 7) {
-    section7(); 
-  }
-  else if(section == 8) {
-    section8(); 
-  }
-  else if(section == 9) {
-    section9(); 
-  }
+  slide(section);
   
   // End Buffer
   pg.endDraw();
@@ -183,13 +155,13 @@ void draw() {
   fill(225);
   textFont(CG24);
   textAlign(LEFT); 
-  text("Elapsed Time: " + nf(mins, 2) + ":" + nf(sec, 2), width * 0.1, height * 0.9);
+  text("Elapsed Time: " + nf(mins, 2) + ":" + nf(sec, 2), width * 0.05, height * 0.95);
  
   // State
   fill(225);
   textFont(CG24);
   textAlign(RIGHT);
-  text("Section: " + section + " Sub-Section: " + subSection, width * 0.9, height * 0.9);
+  text("Section: " + section + " Sub-Section: " + subSection, width * 0.9, height * 0.95);
 
   
 }

@@ -4,47 +4,6 @@
 //-------------------------------------
 
 void keyPressed() {
-
-  if(key == '0') {
-    section = 0;
-    subSection = 0;
-  }  
-  else if(key == '1') {
-    section = 1;
-    subSection = 0;
-  }
-  else if(key == '2') {
-    section = 2;
-    subSection = 0;
-  }
-  else if(key == '3') {
-    section = 3;
-    subSection = 0;
-  }
-  else if(key == '4') {
-    section = 4;
-    subSection = 0;
-  }  
-  else if(key == '5') {
-    section = 5;
-    subSection = 0;
-  }  
-  else if(key == '6') {
-    section = 6;
-    subSection = 0;
-  } 
-  else if(key == '7') {
-    section = 7;
-    subSection = 0;
-  } 
-  else if(key == '8') {
-    section = 8;
-    subSection = 0;
-  } 
-  else if(key == '9') {
-    section = 9;
-    subSection = 0;
-  } 
   
   if(key == CODED) {
     if(keyCode == RIGHT) {
@@ -61,8 +20,9 @@ void keyPressed() {
     }
     else if(keyCode == DOWN) {
       section--;
-      subSection = 0;
       if(section <= 0) section = 0; 
+      subSection = 0;
+      
     }
   }
   
