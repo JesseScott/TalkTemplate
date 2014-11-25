@@ -5,9 +5,6 @@
 
 
 import org.apache.log4j.PropertyConfigurator;
-
-
-
 import java.util.Properties;
 import java.awt.Frame;
 
@@ -44,16 +41,15 @@ P5Properties properties;
 // VARIABLES
 //-------------------------------------
 
-String title, subtitle, body; // Strings to hold our text
-int section = 0; // Major Sections
-int subSection = 0;  // Sub Sections
-int trimChars = 2; // Number of Characters to Trim Off The Line
+String title, subtitle, body;  // Strings to hold our text
+int section = 0;               // Major Sections
+int subSection = 0;            // Sub Sections
+int trimChars = 2;             // Number of Characters to Trim Off The Line
 
-String speak[]; // Our Text File
-int offset; // Based off of Section
+String speak[];                // Our Text File
+int offset;                     // Based off of Section
 
 int mins, sec;    // Timer
-int timeMax = 30; // GML
 
 //-------------------------------------
 // SETUP
@@ -84,7 +80,7 @@ void setup() {
   }
   
   // Screen
-  size(FirstScreenWidth, FirstScreenHeight, JAVA2D);
+  size(FirstScreenWidth, FirstScreenHeight, P2D);
   smooth();
   background(0);
   textAlign(CENTER);
@@ -112,9 +108,11 @@ void setup() {
   
   // Speak
   speak = loadStrings("talk/main.txt");
+  println("-- OUR FILE LOOKS LIKE THIS: "); 
   for(int i = 0; i < speak.length; i++) {
     println(speak[i]); 
   }
+  println("-- END FILE --"); 
   
   // Assets
   images = new PImage[10];
@@ -134,7 +132,7 @@ void draw() {
   
   // Start Buffer
   pg.beginDraw();
-    pg.background(0);
+  pg.background(0);
    
   // Draw Section
   if(section == 0) {

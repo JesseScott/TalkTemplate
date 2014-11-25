@@ -16,19 +16,11 @@ void section0() {
     // Body   
     body = speak[offset + subSection].substring(trimChars);  
     
-    // TAG
-    if(subSection == 0) {
-      pg.translate(pg.width/4, pg.height/4);
-
-    }
     // Title
-    else  { 
-      pg.fill(255);
-      pg.textFont(Header2);
-      pg.textAlign(CENTER);
-      pg.text(body, width/2, height * 0.2);
-    }
-   
+    pg.fill(255);
+    pg.textFont(CG48);
+    pg.textAlign(CENTER);
+    pg.text(body, width/2, height * 0.2);
     
   pg.popStyle();
   pg.popMatrix();
