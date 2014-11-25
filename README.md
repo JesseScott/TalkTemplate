@@ -3,11 +3,8 @@ Talk-Template
 
 a Processing template for a simple slideshow presentation
 
-# CodeMotion branch
+# branches
 
-developed for a talk given at http://berlin.codemotionworld.com/
+various branches have specific content for talks that I have given around the world
 
 # all images/assets are all rights reserved
-
-# also utilizes GML4U 
-https://github.com/01010101/GML4U
