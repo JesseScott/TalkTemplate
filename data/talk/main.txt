@@ -1,17 +1,17 @@
 001 PROCESSING VANCOUVER
-002 <MakerLabs>
-003 Vancouver
+002 Nov 25th, 2014  MakerLabs, Vancouver
+003 
 004
-005 Jesse Scott
-006 various affiliations  
-007 
+005 
+006
+007
 008 
 009
 010 
 011 JESSE SCOTT
-012 So... welcome, thank you... my name is Jesse Scott013 My clever way of saying I am a artist and freelance developer working in interactive, immersive, and mobile spaces014 I am part of several collectives, including the memelab, Graffiti Research Lab, 015 I run the Processing Vancouver meetup016 I teach Interaction Design and iOS / Android development017 and I am the technology director at Hybridity, a local digital agency  
-018 
-019 
+012 So... welcome, thank you... my name is Jesse Scott
+013 “Jesse Scott creates and exhibits work in the genre formerly known as New Media”014 That’s my clever way of saying I am a artist and freelance developer working in interactive, immersive, and mobile spaces015 I am part of several collectives, including the memelab and Graffiti Research Lab 016 I started the Processing Vancouver meetup017 I teach Interaction Design, Creative Coding, and iOS/Android development at Emily Carr University, Langara, and VIVO018 and 
+019 I am the technical director at Hybridity, a local digital agency, which has a product called Generate that you may know
 020 
 021 OVERVIEW
 022 Summer Out East
@@ -25,10 +25,10 @@
 030
 031 CAFKA
 032 Invite
-033 Project
-034 Collaborators
-035 Off Shoots
-036 Future 
+033 Project(s)
+034 Collaborators + Awesome People I met
+035 Issues
+036 Futures
 037 
 038 
 039 
@@ -37,48 +37,48 @@
 042 C.A.V.E.
 043 Media Art History
 044 Cartesian vs. Embodiment 
-045 
+045 Snags
 046 
 047 
 048 
 049 
 050
 051 KWILT 
-052 
-053 
-054 
-055 
-056 
-057 
+052 This was initially inspired by Mennonite quilts that were hanging in Kitchener City Hall
+053 Some backstory about how this project was initiated… 
+054 Christie Micro Tiles
+055 Made in Processing, as this was the easiest / most familiar to address variable windows and screen positions
+056 Started with HYPE framework, moved to a custom class after issues with OOP ability of HYPE
+057 Will be creating a Library for this
 058 
 059 
 060
 061 BERLIN STEP SEQUENCER 
-062 
-063 
-064 
-065 
-066 
-067 
+062 also made on Christie Micro Tiles, also made with Processing, with the addition of Pure Data
+063 Kitchener used to be named Berlin up until WWI… I used to live in Berlin. I know there are over 50 ‘Berlins’ in the US… 
+064 The idea was to pull/create a dataset from the various cities and see what type of composition it made - an experiment in disparity and difference
+065 And of course… I just really wanted to make a step sequencer with the tiles :D
+066 and techno/electronic music is a big part of Berlin’s (DE) identity…
+067 The video you see is on a Windows port, so the ordering of the screens is off, but its kind of nice.
 068 
 069 
 070
 071 IX SYMPOSIUM 
-072 
-073 
-074 
-075 
-076 
-077 
-078 
+072 Part of the reason that I wanted to go out east was to attend the IX Symposium at the SAT in Montreal.
+073 This was timed right before Mutek and Elektra, and concurrent with sound+vision and the BIAN.
+074 Speakers included Jeffrey Shaw, Miller Puckette, Greg Hermanovic, Naut Human, Barry Threw, Vade, Quentin Bleton, and a bunch of academics you wouldn’t recognize
+075 There were dome performances by Joanie Lemercier, Mary Franck, 1024 Architecture, Nohista, and RFID
+076 The first day was a lot of researchers with really large budgets…
+077 The second day got into tools, which was my jam…
+078 The third day i was drinking with Barry and Vade and Miller the whole time and don’t remember much else…
 079 
 080
 081 SECOND STORY 
-082 
-083 
-084 
-085 
-086 
+082 This is an AR app that was built for The Only Animal. Funded by a BC Innovations grant.
+083 The idea was to make a camera tracking app that would trigger site-specific stories.
+084 I decided to use the Vuforia framework by Qualcomm, after talking to Julapy about it. 
+085 Specs: needed to be cross-platform (Android/iOS), and be able to trigger planar content, not just models.
+086 Challenges: Asynchronous content installation. Tracking shots / development cycle. Designing for both platforms.
 087 
 088 
 089
