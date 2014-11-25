@@ -55,6 +55,15 @@ void keyPressed() {
       subSection --;
       if(subSection <= 0) subSection = 1; 
     }
+    else if(keyCode == UP) {
+      section++;
+      subSection = 0;
+    }
+    else if(keyCode == DOWN) {
+      section--;
+      subSection = 0;
+      if(section <= 0) section = 0; 
+    }
   }
   
 }
