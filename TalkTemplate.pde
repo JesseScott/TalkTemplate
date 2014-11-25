@@ -3,25 +3,10 @@
 // IMPORTS
 //-------------------------------------
 
-import toxi.math.conversion.*;
-import toxi.geom.*;
-import toxi.math.*;
-import toxi.geom.mesh2d.*;
-import toxi.util.datatypes.*;
-import toxi.util.events.*;
-import toxi.geom.mesh.subdiv.*;
-import toxi.geom.mesh.*;
-import toxi.math.waves.*;
-import toxi.util.*;
-import toxi.math.noise.*;
 
 import org.apache.log4j.PropertyConfigurator;
 
-import gml4u.brushes.*;
-import gml4u.drawing.*;
-import gml4u.utils.*;
-import gml4u.utils.Timer;
-import gml4u.model.*;
+
 
 import java.util.Properties;
 import java.awt.Frame;
@@ -51,9 +36,6 @@ PFont CG18, CG24, CG36, CG48;
 // Assets
 PImage[] images;
 
-// GML
-Gml gml;
-Timer timer = new Timer();
 
 //Settings
 P5Properties properties;
@@ -137,12 +119,6 @@ void setup() {
   // Assets
   images = new PImage[10];
   images[0] = loadImage("images/cc map.jpg");
-
-  // GML
-  PropertyConfigurator.configure(sketchPath+"/log4j.properties");
-  gml = GmlParsingHelper.getGml(sketchPath+"/data/gml/ccr.xml", false);
-  GmlUtils.timeBox(gml, timeMax, true);
-  timer.start();
 
   
 }
