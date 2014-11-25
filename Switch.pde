@@ -15,8 +15,11 @@ void keyPressed() {
       if(subSection <= 0) subSection = 1; 
     }
     else if(keyCode == UP) {
-      section++;
-      subSection = 0;
+      int max = round(speakSize/10);
+      if(section < max) {
+        section++;
+        subSection = 0;
+      }
     }
     else if(keyCode == DOWN) {
       section--;

@@ -12,8 +12,8 @@ void slide(int num) {
   
     // Title + Body
     try {
-    title = speak[offset].substring(trimChars);    
-    body = speak[offset + subSection].substring(trimChars);  
+      title = speak[offset].substring(trimChars);    
+      body = speak[offset + subSection].substring(trimChars);  
     }
     catch(Exception e) {
       print("ERROR:::: couldnt load - maybe Index Out Of Bounds ???");
@@ -32,7 +32,7 @@ void slide(int num) {
       pg.fill(225);
       pg.textFont(CG24);
       pg.textAlign(LEFT);
-      pg.text(body, width/2 - 100, height/2);  
+      pg.text(body, width/4, height/4, pg.width/2, pg.height/2);  
     }
 
     

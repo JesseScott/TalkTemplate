@@ -33,9 +33,9 @@ PFont CG18, CG24, CG36, CG48;
 // Assets
 PImage[] images;
 
-
 //Settings
 P5Properties properties;
+
 
 //-------------------------------------
 // VARIABLES
@@ -56,6 +56,7 @@ int mins, sec;    // Timer
 //-------------------------------------
 
 void setup() {
+  
   // Properties
    try {
      // Setup
@@ -117,8 +118,6 @@ void setup() {
   
   // Assets
   images = new PImage[10];
-  images[0] = loadImage("images/cc map.jpg");
-
   
 }
 
