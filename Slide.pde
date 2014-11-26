@@ -9,16 +9,34 @@ void slide(int num) {
     
     // Offset
     offset = num * 10;
-    println(offset);
+
     // Title
     try {
       title = speak[offset].substring(trimChars);    
     }
     catch(Exception e) {
       println("TITLE: " + title);
-      print("ERROR:::: couldnt load - maybe Index Out Of Bounds ???\n");
-      e.printStackTrace();
+      println("SPEAK is " + speak.length);
+      print("ERROR:::: couldnt load title - maybe Index Out Of Bounds ???\n");
+      //e.printStackTrace();
     }
+  
+    if(offset == 90) {
+      title = "GENERATE";
+    }
+    else if(offset == 100) {
+      title = "HEALTH DESIGN LAB";
+    }
+    else if(offset == 110) {
+      title = "SANS SONDHEIM";
+    }
+    else if(offset == 120) {
+      title = "JIAN BEGONE";
+    }
+    else if(offset == 130) {
+      title = "YES! NOVA!";
+    }
+
     
     // Body
     try {
@@ -26,8 +44,9 @@ void slide(int num) {
     }
     catch(Exception e) {
       println("BODY: " + body);
-      print("ERROR:::: couldnt load - maybe Index Out Of Bounds ???\n");
-      e.printStackTrace();
+      println("OFFSET  is " + (offset + subSection));
+      print("ERROR:::: couldnt load body - maybe Index Out Of Bounds ???\n");
+      //e.printStackTrace();
     }
     
     // Title

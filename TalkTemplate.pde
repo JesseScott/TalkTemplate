@@ -44,7 +44,7 @@ P5Properties properties;
 String title, subtitle, body;  // Strings to hold our text
 int section = 0;               // Major Sections
 int subSection = 0;            // Sub Sections
-int trimChars = 3;             // Number of Characters to Trim Off The Line
+int trimChars = 4;             // Number of Characters to Trim Off The Line
 int offset;                    // Based off of Section
 String speak[];                // Our Text File
 int speakSize;                 // Length of File

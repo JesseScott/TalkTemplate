@@ -77,25 +77,27 @@
 082 This is an AR app that was built for The Only Animal. Funded by a BC Innovations grant.
 083 The idea was to make a camera tracking app that would trigger site-specific stories.
 084 I decided to use the Vuforia framework by Qualcomm, after talking to Julapy about it. 
+085 Designed by Jess Butler, and thanks to Martin Schueller for the help on the Android version.
 085 Specs: needed to be cross-platform (Android/iOS), and be able to trigger planar content, not just models.
 086 Challenges: Asynchronous content installation. Tracking shots / development cycle. Designing for both platforms.
-087 
+087 Live on the iOS App Store and Google Play Store.
 088 
 089
 090
 091 GENERATE
-092
-093
-094 
-095 
-096 
-097 
+092 As some of you know, I work for Hybridity on Generate, which is a OpenGL-based filter app for A/V creation.
+093 There are a few other people from the team in the room tonight…
+094 We’ve had an exciting last few months, with projection-based gigs in London, Seattle, Portland, and New York, as well as one coming up for Art Basel in Miami.
+095 … as well as being featured in exhibitions at Emily Carr and Science World.
+095 We have version 0.4.5 live on Android now, with a video implementation coming soon.
+096 We are launching the pro feature pack on iOS next week, with the ability to do unlimited recording, a/v output, and some other awesome features.
+097 We are also building an officially sanctioned expansion application for the VJ app VDMX.
 098 
 099 
 100
 101 HEALTH DESIGN LAB
-102 
-103
+102 A lot of my work for Emily Carr involved doing high level UX and code prototyping for the Health Design Lab, a research institute at ECUAD.
+103 
 104
 105 
 106  
@@ -103,19 +105,24 @@
 108 
 109
 110 
-111 SANS SONDHEIM 112 113  114 115 116  
+111 SANS SONDHEIM 112 Let’s get one thing straight. I HATE Alan Sondheim.113  114 115 116  
 117 
 118 
 119 
 120
-121 YES NOVA 
-122 
-122 
-124
-125 
-126 
+121 JIAN BEGONE122 Let’s get one thing straight. I HATE Jian Ghomeshi.123  124 125 126  
 127 
 128 
 129 
 130
-131 — END — 
+131 YES NOVA 
+132 Now, you’ve seen a pretty large variety of projects that I’ve been messing with the last few months - and there’s more where that came from… 
+132 As well, a number of them are in varying states of being finished… largely because of one thing.
+134 Nova.
+135 Nova is my daughter, who some of you have met, and the love of my life. But I don’t share photos of her online.
+136 Never.
+137 Unless I make the platform on which to show it.
+138 Which I have (WIP).
+139 
+140
+141 — END — 
