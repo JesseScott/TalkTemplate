@@ -11,7 +11,7 @@ public class PFrame extends Frame {
         s = applet;
         add(s);
         removeNotify(); 
-        setUndecorated(false);   
+        setUndecorated(true);   
         setResizable(false);
         addNotify(); 
         setLocation(ScreenOffset, 0);

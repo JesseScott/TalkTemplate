@@ -3,7 +3,6 @@
 // IMPORTS
 //-------------------------------------
 
-
 import org.apache.log4j.PropertyConfigurator;
 import java.util.Properties;
 import java.awt.Frame;
@@ -60,7 +59,7 @@ void setup() {
   // Properties
    try {
      // Setup
-     properties=new P5Properties();
+     properties = new P5Properties();
      properties.load(openStream("settings.properties"));
      // Screens
      NumScreens = properties.getIntProperty("env.view.numscreens", 1);
@@ -81,7 +80,7 @@ void setup() {
   }
   
   // Screen
-  size(FirstScreenWidth, FirstScreenHeight, P2D);
+  size(FirstScreenWidth, FirstScreenHeight, JAVA2D);
   smooth();
   background(0);
   textAlign(CENTER);
@@ -132,10 +131,12 @@ void draw() {
   
   // Start Buffer
   pg.beginDraw();
-  pg.background(0);
+  
+    pg.smooth();
+    pg.background(0);
    
-  // Draw Section
-  slide(section);
+    // Draw Section
+    slide(section);
   
   // End Buffer
   pg.endDraw();
