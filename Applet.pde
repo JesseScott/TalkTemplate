@@ -26,7 +26,7 @@ public class PFrame extends Frame {
 
 public void init() {
   frame.removeNotify(); 
-  frame.setUndecorated(false);   
+  frame.setUndecorated(true);   
   frame.setResizable(false);
   frame.addNotify(); 
   super.init();
