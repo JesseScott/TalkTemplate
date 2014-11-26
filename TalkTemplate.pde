@@ -28,6 +28,7 @@ int SecondScreenOffset, SecondScreenWidth, SecondScreenHeight;
 // Fonts
 PFont Header1, Header2, Header3, Body;
 PFont CG18, CG24, CG36, CG48;
+PFont HelveticaNeue;
 
 // Assets
 PImage[] images;
@@ -100,7 +101,7 @@ void setup() {
   Header2 = createFont("fonts/Header2", 48, true);
   Header3 = createFont("fonts/Header3", 36, true);
   Body    = createFont("fonts/Body", 24, true);
-  
+  HelveticaNeue = createFont("fonts/HelveticaNeue", 72, true);
   CG18 = createFont("fonts/CenturyGothic-18", 18, true);
   CG24 = createFont("fonts/CenturyGothic-24", 24, true);
   CG36 = createFont("fonts/CenturyGothic-36", 36, true);
@@ -128,12 +129,15 @@ void setup() {
 void draw() {
   // Background
   background(0);
-  
+    
   // Start Buffer
   pg.beginDraw();
   
     pg.smooth();
     pg.background(0);
+    
+    // KeyNote
+    applyKeyNoteGradient();
    
     // Draw Section
     slide(section);
@@ -167,4 +171,13 @@ void draw() {
 }
 
 //-------------------------------------
+
+void applyKeyNoteGradient() {
+  pg.colorMode(RGB);
+  int eighth = pg.height/8;
+  for(int i = 0; i < pg.height; i++) {
+    pg.stroke(eighth * ((i+1)/pg.height) * 2, eighth * ((i+1)/pg.height), map(i, 0, pg.height, 0, 100));
+    pg.line(0, i, pg.width, i);    
+  }
+}
 
