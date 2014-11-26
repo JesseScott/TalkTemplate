@@ -7,7 +7,7 @@ void slide(int num) {
   pg.pushStyle();
   pg.pushMatrix();
     
-     // Offset
+    // Offset
     offset = num * 10;
   
     // Title + Body
@@ -23,7 +23,7 @@ void slide(int num) {
     // Title
     if(subSection == 0) {
       pg.fill(255);
-      pg.textFont(Header2);
+      pg.textFont(HelveticaNeue);
       pg.textAlign(CENTER);
       pg.text(title, width/2, height * 0.2);
     }
