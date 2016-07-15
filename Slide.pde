@@ -1,6 +1,6 @@
 
 //-------------------------------------
-// Section 9  :  COMMUNITY
+// SLIDE
 //-------------------------------------
 
 void slide(int num) {
@@ -36,7 +36,9 @@ void slide(int num) {
     else if(offset == 130) {
       title = "YES! NOVA!";
     }
-
+    else if(offset == 140) {
+      title = "-- END --";
+    }
     
     // Body
     try {
